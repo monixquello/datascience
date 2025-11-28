@@ -1,4 +1,3 @@
-%%writefile app.py
 
 import streamlit as st
 import numpy as np
@@ -88,5 +87,6 @@ else:
         elif model_choice == "MLP":
             pred = mlp_model.predict(features)[0]
             st.success(f"**MLP Prediction:** {pred:.2f} units")
+
 
 
